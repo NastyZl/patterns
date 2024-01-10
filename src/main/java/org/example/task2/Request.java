@@ -2,25 +2,33 @@ package org.example.task2;
 
 public class Request {
     private String fullName;
-    private String personalData;
+    private Integer age;
     private double income;
-    private String creditHistory;
-
+    private TypeCreditHistory creditHistory;
     private double interestRate;
     private int loanTerm;
     private double monthlyPayment;
+    private boolean blackList;
 
-    public Request(String fullName, String personalData, double income, String creditHistory,
-                   double interestRate, int loanTerm, double monthlyPayment) {
+    public Request(String fullName, Integer age, double income, TypeCreditHistory creditHistory,
+                   double interestRate, int loanTerm, double monthlyPayment, boolean blackList) {
         this.fullName = fullName;
-        this.personalData = personalData;
+        this.age = age;
         this.income = income;
         this.creditHistory = creditHistory;
         this.interestRate = interestRate;
         this.loanTerm = loanTerm;
         this.monthlyPayment = monthlyPayment;
+        this.blackList = blackList;
     }
 
+    public boolean isBlackList() {
+        return blackList;
+    }
+
+    public void setBlackList(boolean blackList) {
+        this.blackList = blackList;
+    }
     public String getFullName() {
         return fullName;
     }
@@ -29,12 +37,12 @@ public class Request {
         this.fullName = fullName;
     }
 
-    public String getPersonalData() {
-        return personalData;
+    public Integer getAge() {
+        return age;
     }
 
-    public void setPersonalData(String personalData) {
-        this.personalData = personalData;
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     public double getIncome() {
@@ -45,11 +53,11 @@ public class Request {
         this.income = income;
     }
 
-    public String getCreditHistory() {
+    public TypeCreditHistory getCreditHistory() {
         return creditHistory;
     }
 
-    public void setCreditHistory(String creditHistory) {
+    public void setCreditHistory(TypeCreditHistory creditHistory) {
         this.creditHistory = creditHistory;
     }
 
