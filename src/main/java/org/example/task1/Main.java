@@ -1,14 +1,30 @@
 package org.example.task1;
 
-import org.w3c.dom.ls.LSOutput;
+import org.example.task1.factories.*;
+import org.example.task1.models.Card;
+import org.example.task1.models.TypeCard;
 
 public class Main {
     public static void main(String[] args) {
+        CardFactory cardFactory = createCardByType(TypeCard.CREDIT);
+        Card card = cardFactory.createCard("123456789", 5000);
+        card.transfer(500);
 
-        CardFactory creditCardFactory = new CreditCardFactory();
-        CardFactory debitCardFactory = new DebitCardFactory();
+        cardFactory = createCardByType(TypeCard.DEBIT);
+        card = cardFactory.createCard("987654321", 100_000);
+        card.transfer(10_000);
+    }
 
-        creditCardFactory.transfer(500);
-        debitCardFactory.transfer(1000);
+    static CardFactory createCardByType(TypeCard typeCard) {
+        switch (typeCard) {
+            case DEBIT: {
+                return new DebitCardFactory();
+            }
+            case CREDIT: {
+                return new CreditCardFactory();
+            }
+            default:
+                throw new RuntimeException();
+        }
     }
 }

@@ -1,4 +1,4 @@
-package org.example.task1;
+package org.example.task1.models;
 
 public enum TypeCard {
     DEBIT("Дебетовая карта"),
