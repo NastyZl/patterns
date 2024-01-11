@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0fec9e4-acaf-4dbf-ad44-26113933f781" name="Changes" comment="task2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/EmailCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/Invoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/SmsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/TextNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/ConcreteNotifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/NotificationMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/NotifierDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/task3/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/Notifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/task3/EmailCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/EmailNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/task3/Invoker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/task3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/task3/SmsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/SmsNotifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/task3/TextNotification.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -45,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/programming/JAVASCHOOL/patterns"
+    "last_opened_file_path": "D:/JAVA/programm/java-design-patterns"
   }
 }]]></component>
   <component name="RunManager" selected="Application.org.example.task3.Main">
